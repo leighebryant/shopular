@@ -1,0 +1,37 @@
+<!Doctype HTML>
+<html ng-app='inventory' lang="en">
+<header>
+    <title>Shopular</title>
+    <link rel="stylesheet" href='/styles/main.css'>
+</header>
+
+<body>
+    <!--Content goes here -->
+    <main>
+        <h1>shopular</h1>
+        <div class="mainContainer" ng-controller='inventoryController as inventory'>
+            <table class='inventory'>
+                <tr>
+                    <th>Name</th>
+                    <th>Color</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+
+                <tr ng-repeat='item in inventory.items' class='tabletoes'>
+                    <td>{{item.name}}</td>
+                    <td>{{item.color}}</td>
+                    <td>{{item.quantity}}</td>
+                    <td>${{inventory.getPrice(item.price, item.discount)}}<img src='/images/saleicon.png' ng-show='inventory.getDiscount(item.discount)' class='saletag' /></td>
+
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src='main.js'></script>
+    </footer>
+</body>
+
+</html>

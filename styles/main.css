@@ -1,0 +1,36 @@
+.inventory {
+  margin: 0 auto;
+  width: 80%; }
+
+.saletag {
+  height: 25px; }
+
+* {
+  font-family: "Helvetica Neue";
+  font-weight: 200; }
+
+body {
+  background-image: url("/images/stardust.png"); }
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+  color: white; }
+
+table {
+  border-radius: 5px;
+  background: lightgrey; }
+  table th {
+    font-size: 24px;
+    background-color: white; }
+  table td {
+    text-align: center; }
+  table tr.tabletoes {
+    height: 30px; }
+    table tr.tabletoes:nth-child(even) {
+      background-color: lightgrey; }
+    table tr.tabletoes:nth-child(odd) {
+      background-color: white; }
+
+/*# sourceMappingURL=main.css.map */

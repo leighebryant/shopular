@@ -1,0 +1,42 @@
+@import 'partial.scss';
+
+* {
+    font-family: "Helvetica Neue";
+    font-weight: 200;
+}
+
+body {
+    background-image: url("/images/stardust.png");
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    color: white;
+}
+
+table {
+  border-radius: 5px;
+  background: lightgrey;
+
+    th {
+        font-size: 24px;
+        background-color: white;
+    }
+    td {
+        text-align: center;
+    }
+
+    tr.tabletoes {
+        &:nth-child(even) {
+        background-color: lightgrey;
+        }
+
+        &:nth-child(odd) {
+        background-color: white;
+        }
+
+       height: 30px;
+    }
+}
