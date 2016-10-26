@@ -10,7 +10,7 @@
   font-weight: 200; }
 
 body {
-  background-image: url("/images/stardust.png"); }
+  background-image: url("../images/stardust.png"); }
 
 h1 {
   text-align: center;
