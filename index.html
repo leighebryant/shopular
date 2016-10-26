@@ -2,7 +2,7 @@
 <html ng-app='inventory' lang="en">
 <header>
     <title>Shopular</title>
-    <link rel="stylesheet" href='/styles/main.css'>
+    <link rel="stylesheet" href='./styles/main.css'>
 </header>
 
 <body>
@@ -22,7 +22,7 @@
                     <td>{{item.name}}</td>
                     <td>{{item.color}}</td>
                     <td>{{item.quantity}}</td>
-                    <td>${{inventory.getPrice(item.price, item.discount)}}<img src='/images/saleicon.png' ng-show='inventory.getDiscount(item.discount)' class='saletag' /></td>
+                    <td>${{inventory.getPrice(item.price, item.discount)}}<img src='./images/saleicon.png' ng-show='inventory.getDiscount(item.discount)' class='saletag' /></td>
 
                 </tr>
             </table>
